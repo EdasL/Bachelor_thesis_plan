@@ -1,0 +1,99 @@
+\documentclass{VUMIFInfBakalaurinis}
+\usepackage{algorithmicx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{caption}
+\usepackage{color}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}  % Nuorodų aktyvavimas
+\usepackage{listings}
+\usepackage{subfig}
+\usepackage{url}
+\usepackage{wrapfig}
+
+
+% Titulinio aprašas
+\university{Vilniaus universitetas}
+\faculty{Matematikos ir informatikos fakultetas}
+% \institute{Informatikos institutas}  % Užkomentavus šią eilutę - institutas neįtraukiamas į titulinį
+\department{Programų sistemų katedra}
+\title{Daugiaplatformių mobiliųjų aplikacijų kūrimo karkasų analizė}
+\titleineng{Analysis of cross-platform mobile app development frameworks}
+\papertype{Bakalaurinio darbo planas}
+\status{4 kurso 4 grupės studentas}
+\author{Edas Lakavičius}
+% \secondauthor{Vardonis Pavardonis}   % Pridėti antrą autorių
+\supervisor{lekt. Jonas Ragaišis}
+\date{Vilnius \\ \the\year}
+
+% Nustatymai
+% \setmainfont{Palemonas}   % Pakeisti teksto šriftą į Palemonas (turi būti įdiegtas sistemoje)
+\bibliography{bibliografija} 
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Tyrimo objektas ir aktualumas}
+Tyrimo objektas - daugiaplatformių mobiliųjų aplikacijų kūrimo karkasai.
+
+Šiais laikais internetas, socialinė medija ir elektroninė prekyba yra neatsiejami nuo kasdienybės dalykai. Interneto naudojimas išaugo nuo 413 klientų milijonų 2000 metais iki 3.4 bilijonų 2016 \cite{owidinternet} ir vis dar auga beprotišku greičiu kiekvieną dieną. Didžioji dalis interneto naudotojų yra per mobilius telefonus prisijungiantys klientai, kurie greit lenks kompiuterius naudojančius klientus, net 4 kartus \cite{internetusage}. Būtent dėl to nenuostabu, kad atsiranda vis daugiau projektų, kurie fokusuojasi į mobiliųjų aplikacijų kūrimą.
+
+Šiuo metu didžiausios aplikacijų parduotuvės "Google Play" ir "Apple App Store" turi daugiau nei 5 milijonų mobiliųjų aplikacijų \cite{appcount} ir įmonei, norinčiai efektyviai dalyvauti šioje rinkoje reiks ne tik daug investuoti, bet ir gebėti greitai kurti ir gerinti savo aplikacijas. Įprastai yra kuriamos atskiros aplikacijos "iOS" ir "Android" platformom, kas dažniausiai reikalauja turėti atskiras komandas ar programuotojus specializuojančius prie vienos iš šių sistemų, tačiau pačios aplikacijos turi būti kuriamos vienodos.
+
+Būtent dėl didelių kaštų, aplikacijų kūrimo greičio ir skirtingų platformų apjungimo išpopuliarėjo hibridinio tipo technologijos - daugiaplatformių mobiliųjų aplikacijų kūrimo karkasai. Per trumpą laiką buvo sukurta gana daug skirtingų technologijų skirtų tam pačiam prieš tai jau minėtam tikslui - apjungti skirtingas platformas. Todėl yra aktualu šiuos karkasus išanalizuoti ir palyginti, kad skirtingi projektai galėtų pasirinkti sau tinkamiausią.
+
+
+\section{Darbo tikslas}
+Darbu siekiama, atliekant skirtingų daugiaplatformių aplikacijų kūrimo karkasų analizę, sukurti rekomendacijų rinkinį, padėsiantį pasirinkti tarp išanalizuotų variantų.
+
+\begin {section}{Keliami uždaviniai ir laukiami rezultatai}
+Keliami uždaviniai:
+\begin{itemize}
+  \item Sukurti bazines aplikacijas, naudojant pasirinktus karkasus.
+  \item Aprašyti pasirinktų aplikacijų kūrimo karkasų architektūras.
+  \item Išanalizuoti pasirinktų aplikacijų kūrimo karkasų privalumus bei trūkumus.
+\end{itemize}
+
+Laukiami rezultatai:
+\begin{itemize}
+  \item Realizuotos bazinės aplikacijos, padėsiančios išsamiau suprasti, analizuojamus aplikacijų kūrimo karkasus.
+  \item Sukurtas rekomendacijų rinkinys, padėsiantis išsirinkti tinkamiausią aplikacijų kūrimo karkasą.
+\end{itemize}
+
+\end{section}
+
+\section{Tyrimo metodas}
+Analizuojama literatūra, susijusi su daugiaplatformių mobilių aplikacijų karkasais ir jų panaudojimu. Su sukurtų bazinių aplikacijų pagalba išskiriami kriterijai, padėsiantys palygintis pasirinktus mobilių aplikacijų kūrimo karkasus. Analizės rezultatai atvaizduojami lentelėje.
+
+\section{Numatomas darbo atlikimo procesas}
+\begin{enumerate}
+  \item Literatūros analizė.
+  \item Daugiaplatformių aplikacijų kūrimo karkasų pasirinkimas.
+  \item Bazinių aplikacijų kūrimas.
+  \item Sukurtų aplikacijų architektūrų aprašymas.
+  \item Palyginimo kriterijų kūrimas.
+  \item Palyginimo lentelės kūrimas.
+\end{enumerate}
+
+% \subsubsection{Skirsnis}
+% \subsubsubsection{Straipsnis}
+% \subsubsection{Skirsnis}
+% \section{Skyrius}
+% \subsection{Poskyris}
+% \subsection{Poskyris}
+
+
+\printbibliography[heading=bibintoc] % Literatūros šaltiniai aprašomi
+% bibliografija.bib faile. Šaltinių sąraše nurodoma panaudota literatūra,
+% kitokie šaltiniai. Abėcėlės tvarka išdėstoma tik darbe panaudotų (cituotų,
+% perfrazuotų ar bent paminėtų) mokslo leidinių, kitokių publikacijų
+% bibliografiniai aprašai (šiuo punktu pasirūpina LaTeX). Aprašai pateikiami
+% netransliteruoti.
+
+\end{document}
