@@ -1,1 +1,1 @@
-# Bachelor_thesis_plan
+# Bachelor thesis plan
