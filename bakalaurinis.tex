@@ -42,14 +42,40 @@
 \section{Tyrimo objektas ir aktualumas}
 Tyrimo objektas - daugiaplatformių mobiliųjų aplikacijų kūrimo karkasai.
 
-Šiais laikais internetas, socialinė medija ir elektroninė prekyba yra neatsiejami nuo kasdienybės dalykai. Interneto naudojimas išaugo nuo 413 klientų milijonų 2000 metais iki 3.4 milijardų 2016 \cite{owidinternet} ir vis dar auga. Didžioji dalis interneto naudotojų yra per mobilius telefonus prisijungiantys klientai, kurie greit lenks kompiuterius naudojančius klientus, net 4 kartus \cite{internetusage}. Būtent dėl to nenuostabu, kad atsiranda vis daugiau projektų, kurie fokusuojasi į mobiliųjų programėlių kūrimą.
+Šiais laikais internetas, socialinė medija ir elektroninė prekyba yra neatsiejami nuo kasdienybės dalykai.
+Interneto naudojimas išaugo nuo 413 klientų milijonų 2000 metais iki 3.4 milijardų 2016 \cite{owidinternet}
+ir vis dar auga. Didžioji dalis interneto naudotojų yra per mobilius telefonus prisijungiantys klientai,
+kurie greit lenks kompiuterius naudojančius klientus, net 4 kartus \cite{internetusage}. Būtent dėl to
+nenuostabu, kad atsiranda vis daugiau projektų, kurie fokusuojasi į mobiliųjų programėlių kūrimą.
 
-Šiuo metu didžiausios aplikacijų parduotuvės "Google Play" ir "Apple App Store" turi daugiau nei 5 milijonų mobiliųjų programėlių \cite{appcount} ir įmonei, norinčiai efektyviai dalyvauti šioje rinkoje reiks ne tik daug investuoti, bet ir gebėti greitai kurti ir gerinti savo aplikacijas. Įprastai yra kuriamos atskiros aplikacijos "iOS" ir "Android" platformom, kas dažniausiai reikalauja turėti atskiras komandas ar programuotojus specializuojančius prie vienos iš šių sistemų, tačiau pačios aplikacijos turi būti kuriamos vienodos.
+Šiuo metu didžiausios aplikacijų parduotuvės "Google Play" ir "Apple App Store" turi daugiau nei 5 milijonų
+mobiliųjų programėlių \cite{appcount} ir įmonei, norinčiai efektyviai dalyvauti šioje rinkoje reiks ne tik
+daug investuoti, bet ir gebėti greitai kurti ir gerinti savo aplikacijas. Įprastai yra kuriamos atskiros \
+aplikacijos "iOS" ir "Android" platformom, kas dažniausiai reikalauja turėti atskiras komandas ar
+programuotojus specializuojančius prie vienos iš šių sistemų, tačiau pačios aplikacijos turi būti kuriamos
+vienodos.
 
-Būtent dėl didelių kaštų, aplikacijų kūrimo greičio ir skirtingų platformų apjungimo išpopuliarėjo hibridinio tipo technologijos - daugiaplatformių mobiliųjų programėlių kūrimo karkasai. Per trumpą laiką buvo sukurta gana daug skirtingų technologijų skirtų tam pačiam prieš tai jau minėtam tikslui - apjungti skirtingas platformas. Todėl yra aktualu šiuos karkasus išanalizuoti ir palyginti, kad skirtingi projektai galėtų pasirinkti sau tinkamiausią. Šiame darbe lyginsiu tris šiuo metu populiariausius karkasus - "React Native", "Ionic" ir "Flutter" \cite{popularframeworks}.
+Būtent dėl didelių kaštų, aplikacijų kūrimo greičio ir skirtingų platformų apjungimo išpopuliarėjo hibridinio
+tipo technologijos - daugiaplatformių mobiliųjų programėlių kūrimo karkasai. Per trumpą laiką buvo sukurta
+gana daug skirtingų technologijų skirtų tam pačiam prieš tai jau minėtam tikslui - apjungti skirtingas
+platformas. Vis dėlto, kad ir kiek daug naudos atneša daugiaplatformių aplikacijų kūrimo karkasai šios technologijos neapsieina be trūkumų.
+Vietinės aplikacijos iki šiol vis dar turi gan daug aspektų, kuriais lenkia daugiaplatformes. Daugiaplatformių programėlių kūrimo karkasai
+turi ribotą prieigą prie vietinių aplikacijų programavimo sąsajų, kenčia eksploatacinės savybės, o dėl to tuo
+pačiu kenčia ir vartotojo patyrimas. "iOS" ir "Android" turi skirtingas gaires aprašančias būtent šiom platformom būdingus
+dizaino sprendimus ir vartotojo sąsają \cite{androidui iosui}. Tai reiškia, kad vartotojų patyrimai ant šių skirtingų platformų
+skiriasi ir kuriant programėles būtina į tai atsižvelgti.
+
+Būtent dėl vartotojų patyrimų toks technologijų gigantas kaip "Facebook" 2012-ais atsisakė daugiaplatformių aplikacijų kūrimo
+karkasų ir grįžo prie vietinių sprendimų \cite{facebook}. Nuo to laiko daugiaplatformių aplikacijų kūrimo karkasai sparčiai
+augo, tačiau vartotojų patyrimo problema, naudojant daugiaplatformes programėles išlieka labai svarbi.
+Andreas Holzinger, Peter Treitler ir Wolfgang Slany savo bendrame darbe pabrėžia vartotojo sąsajos svarbą skirtingų platformų mobiliose aplikacijose
+ir pažymi daugiaplatformių aplikacijų kūrimo karkasų tobulėjimo greitį bei tinkamo karkaso pasirinkimo būtinybę \cite{usable}.
+Todėl yra aktualu ištirti ir palyginti su kokiais apribojimais, kurie gali įtakoti vartotojų patyrimus susiduria daugiaplatformės programėlės bei
+kaip sėkmingai jos veikia, lyginant tarpusavyje. Šiame darbe bus lyginami trys šiuo metu populiariausi karkasai - "React Native", "Ionic" ir "Flutter""React Native", "Ionic" ir "Flutter" \cite{popularframeworks}
+su kuriais atitinkamai bus sukurtos bazinės programėlės.
 
 \section{Darbo tikslas}
-Darbu siekiama, atliekant "React Native", "Ionic" ir "Flutter" daugiaplatformių aplikacijų kūrimo karkasų analizę, sukurti rekomendacijų rinkinį, padėsiantį pasirinkti tarp išanalizuotų variantų.
+Darbu siekiama, atliekant "React Native", "Ionic" ir "Flutter" daugiaplatformių aplikacijų kūrimo karkasų vartotojo patyrimo analizę, sukurti rekomendacijų rinkinį, padėsiantį pasirinkti tarp išanalizuotų variantų.
 
 \begin {section}{Keliami uždaviniai ir laukiami rezultatai}
 Keliami uždaviniai:
@@ -57,29 +83,31 @@ Keliami uždaviniai:
   \item Analizuoti "React Native", "Ionic" ir "Flutter" aplikacijų kūrimo karkasus.
   \item Sukurti bazines aplikacijas.
   \item Aprašyti "React Native", "Ionic" ir "Flutter" aplikacijų kūrimo karkasų limitacijas.
-  \item Ištirti "React Native", "Ionic" ir "Flutter" aplikacijų kūrimo karkasų sukurtų bazinių aplikacijų kūrimo ir veikimo greitį.
+  \item Atlikti eksperimentinį "React Native", "Ionic" ir "Flutter" aplikacijų kūrimo karkasų sukurtų bazinių aplikacijų vartotojo patyrimo tyrimą.
   \item Apibendrinti tyrimo rezultatus, pateikti išvadas ir rekomendacijas.
 \end{itemize}
 
 Laukiami rezultatai:
 \begin{itemize}
   \item Realizuotos bazinės aplikacijos, padėsiančios išsamiau suprasti, analizuojamus aplikacijų kūrimo karkasus.
-  \item Atliktas programėlių sukurtų pasirinktais karkasais kūrimo ir veikimo greičių tyrimas.
+  \item Atliktas programėlių sukurtų pasirinktais karkasais vartotojo patyrimo tyrimas.
   \item Sukurtas rekomendacijų rinkinys, padėsiantis išsirinkti tinkamiausią aplikacijų kūrimo karkasą.
 \end{itemize}
 
 \end{section}
 
 \section{Tyrimo metodas}
-Analizuojama literatūra, susijusi su daugiaplatformių mobilių aplikacijų karkasais ir jų panaudojimu. Su sukurtų bazinių aplikacijų pagalba išskiriami kriterijai, padėsiantys palygintis pasirinktus mobilių aplikacijų kūrimo karkasus. Analizės rezultatai atvaizduojami lentelėje.
+Analizuojama literatūra, susijusi su daugiaplatformių mobilių aplikacijų karkasais ir jų panaudojimu.
+Su sukurtų bazinių aplikacijų pagalba išskiriamos daugiaplatformių aplikacijų kūrimo karkasų limitacijos.
+Atliekamas eksperimentinis sukurtų aplikacijų vartotojo patyrimo tyrimas.
 
 \section{Numatomas darbo atlikimo procesas}
 \begin{enumerate}
   \item Literatūros analizė.
   \item Bazinių aplikacijų kūrimas.
-  \item Sukurtų aplikacijų architektūrų aprašymas.
-  \item Atliekamas programėlių sukurtų pasirinktais karkasais kūrimo ir veikimo greičių tyrimas.
-  \item Rekomendacijų lentelės kūrimas.
+  \item Sukurtų aplikacijų limitacijų aprašymas.
+  \item Atliekamas programėlių sukurtų pasirinktais karkasais vartotojo patyrimo tyrimas.
+  \item Rekomendacijų rinkinio kūrimas.
 \end{enumerate}
 
 % \subsubsection{Skirsnis}
